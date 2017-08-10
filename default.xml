@@ -596,6 +596,7 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <include name="remove.xml" />
+  <include name="oreo.xml" />
+  <include name="onyx.xml" />
 
 </manifest>
