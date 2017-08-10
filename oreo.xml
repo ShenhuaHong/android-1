@@ -150,4 +150,17 @@
   <remove-project name="platform/system/vold" />
   <project path="system/vold" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_vold" />
 
+  <remove-project name="platform/hardware/qcom/audio" />
+  <project path="platform/hardware/qcom/audio" name="Oreo-onyx/hardware_qcom_audio" remote="github" revision="oreo" />
+
+  <remove-project name="platform/hardware/qcom/display" />
+  <project path="platform/hardware/qcom/display" name="Oreo-onyx/hardware_qcom_display" remote="github" revision="oreo" />
+
+  <remove-project name="platform/hardware/qcom/media" />
+  <project path="platform/hardware/qcom/media" name="Oreo-onyx/hardware_qcom_media" remote="github" revision="oreo" />
+
+  <project path="external/brotli" name="platform/external/brotli" revision="master" />
+
+  <project path="system/timezone" name="platform/system/timezone" revision="master" />
+
 </manifest>
