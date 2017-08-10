@@ -88,7 +88,10 @@
   </project>
 
   <remove-project name="platform/build/soong" />
-  <project path="build/soong" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="build_soong" />
+  <project path="build/soong" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="build_soong" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
 
   <remove-project name="platform/external/cblas" />
   <project path="external/cblas" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_cblas" />
