@@ -2,10 +2,10 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
   <remote  name="github"
-           fetch="https://github.com/" />
+           fetch="https://github.com" />
   <default revision="refs/tags/android-o-preview-4"
            remote="aosp"
            sync-j="4" />
@@ -579,6 +579,6 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <include name="remove.xml" />
+  <include name="oreo.xml" />
 
 </manifest>
