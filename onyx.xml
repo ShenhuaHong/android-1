@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="device/oneplus/onyx" name="Oreo-onyx/device_oneplus_onyx" remote="github" revision="oreo" />
+  <project path="vendor/oneplus" name="Oreo-onyx/proprietary_vendor_oneplus" remote="github" revision="oreo" />
+  <project path="kernel/oneplus/onyx" name="YumeMichi/kernel_oneplus_onyx" remote="github" revision="nt" />
+
+</manifest>
