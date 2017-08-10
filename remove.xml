@@ -70,4 +70,84 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
   <remove-project name="platform/prebuilts/qemu-kernel" />
 
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="bionic" />
+
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="bootable_recovery" />
+
+  <remove-project name="platform/build" />
+  <project path="build/make" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="build_make">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="build_soong" />
+
+  <remove-project name="platform/external/cblas" />
+  <project path="external/cblas" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_cblas" />
+
+  <remove-project name="platform/external/e2fsprogs" />
+  <project path="external/e2fsprogs" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_e2fsprogs" />
+
+  <remove-project name="platform/external/eigen" />
+  <project path="external/eigen" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_eigen" />
+
+  <remove-project name="platform/external/f2fs-tools" />
+  <project path="external/f2fs-tools" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_f2fs-tools" />
+
+  <remove-project name="platform/external/fio" />
+  <project path="external/fio" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_fio" />
+
+  <remove-project name="platform/external/libexif" />
+  <project path="external/libexif" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_libexif" />
+
+  <remove-project name="platform/external/toybox" />
+  <project path="external/toybox" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_toybox" />
+
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="frameworks_av" />
+
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="AdrianDC/platform_frameworks_base" remote="github" revision="aosp_development_sony8960_o" />
+
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="frameworks_native" />
+
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="hardware_interfaces" />
+
+  <remove-project name="platform/packages/apps/Camera2" />
+  <project path="packages/apps/Camera2" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="packages_apps_Camera2" />
+
+  <remove-project name="platform/packages/apps/Gallery2" />
+  <project path="packages/apps/Gallery2" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="packages_apps_Gallery2" />
+
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="packages_apps_Settings" />
+
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="packages_providers_MediaProvider" />
+
+  <remove-project name="platform/system/bt" />
+  <project path="system/bt" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_bt" />
+
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_core" />
+
+  <remove-project name="platform/system/netd" />
+  <project path="system/netd" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_netd" />
+
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_sepolicy" />
+
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_vold" />
+
 </manifest>
