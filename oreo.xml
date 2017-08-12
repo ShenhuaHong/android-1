@@ -77,7 +77,7 @@
   <project path="bootable/recovery" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="bootable_recovery" />
 
   <remove-project name="platform/build" />
-  <project path="build/make" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="build_make">
+  <project path="build/make" name="Oreo-onyx/build_make" remote="github" revision="oreo">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -158,12 +158,17 @@
 
   <remove-project name="platform/hardware/qcom/display" />
   <project path="hardware/qcom/display" name="Oreo-onyx/hardware_qcom_display" remote="github" revision="oreo" />
+  <project path="hardware/qcom/display-caf/msm8974" name="Oreo-onyx/hardware_qcom_display" remote="github" revision="oreo-caf-8974" />
 
   <remove-project name="platform/hardware/qcom/media" />
   <project path="hardware/qcom/media" name="Oreo-onyx/hardware_qcom_media" remote="github" revision="oreo" />
+  <project path="hardware/qcom/media-caf/msm8974" name="Oreo-onyx/hardware_qcom_media" remote="github" revision="oreo-caf-8974" />
 
   <remove-project name="platform/hardware/qcom/gps" />
   <project path="hardware/qcom/gps" name="Oreo-onyx/hardware_qcom_gps" remote="github" revision="oreo" />
+
+  <remove-project name="platform/hardware/qcom/bt" />
+  <project path="hardware/qcom/bt" name="Oreo-onyx/hardware_qcom_bt" remote="github" revision="oreo" />
 
   <project path="external/brotli" name="platform/external/brotli" revision="master" />
 
