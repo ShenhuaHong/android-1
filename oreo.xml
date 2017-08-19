@@ -24,8 +24,6 @@
   <remove-project name="device/google/dragon-kernel" />
   <remove-project name="device/google/marlin" />
   <remove-project name="device/google/marlin-kernel" />
-  <remove-project name="device/htc/flounder" />
-  <remove-project name="device/htc/flounder-kernel" />
   <remove-project name="device/huawei/angler" />
   <remove-project name="device/huawei/angler-kernel" />
   <remove-project name="device/lge/bullhead" />
@@ -35,8 +33,6 @@
   <remove-project name="device/linaro/bootloader/edk2" />
   <remove-project name="device/linaro/hikey" />
   <remove-project name="device/linaro/hikey-kernel" />
-  <remove-project name="device/moto/shamu" />
-  <remove-project name="device/moto/shamu-kernel" />
   <remove-project name="platform/hardware/intel/audio_media" />
   <remove-project name="platform/hardware/intel/bootstub" />
   <remove-project name="platform/hardware/intel/common/bd_prov" />
@@ -98,14 +94,11 @@
 
   <project path="external/stlport" name="lineage-next/android_external_stlport" remote="github" revision="lineage-15.0_master" />
 
-  <remove-project name="platform/external/libweave" />
-  <project path="external/libweave" name="Oreo-onyx/external_libweave" remote="github" revision="master" />
-
   <remove-project name="platform/frameworks/av" />
   <project path="frameworks/av" name="lineage-next/android_frameworks_av" remote="github" revision="lineage-15.0_master" />
 
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="AdrianDC/platform_frameworks_base" remote="github" revision="aosp_development_sony8960_master" />
+  <project path="frameworks/base" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="frameworks_base" />
 
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="frameworks_native" />
