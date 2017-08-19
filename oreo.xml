@@ -71,13 +71,13 @@
   <remove-project name="platform/prebuilts/qemu-kernel" />
 
   <remove-project name="platform/bionic" />
-  <project path="bionic" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="bionic" />
+  <project path="bionic" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="bionic" />
 
   <remove-project name="platform/bootable/recovery" />
-  <project path="bootable/recovery" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="bootable_recovery" />
+  <project path="bootable/recovery" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="bootable_recovery" />
 
   <remove-project name="platform/build" />
-  <project path="build/make" name="Oreo-onyx/build_make" remote="github" revision="oreo">
+  <project path="build/make" name="Oreo-onyx/build_make" remote="github" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -87,91 +87,81 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
+  <remove-project name="platform/build/kati" />
+  <project path="build/kati" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="build_kati" />
+
   <remove-project name="platform/build/soong" />
-  <project path="build/soong" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="build_soong" >
+  <project path="build/soong" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="build_soong" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <remove-project name="platform/external/cblas" />
-  <project path="external/cblas" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_cblas" />
+  <project path="external/stlport" name="lineage-next/android_external_stlport" remote="github" revision="lineage-15.0_master" />
 
-  <remove-project name="platform/external/e2fsprogs" />
-  <project path="external/e2fsprogs" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_e2fsprogs" />
-
-  <remove-project name="platform/external/eigen" />
-  <project path="external/eigen" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_eigen" />
-
-  <remove-project name="platform/external/f2fs-tools" />
-  <project path="external/f2fs-tools" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_f2fs-tools" />
-
-  <remove-project name="platform/external/fio" />
-  <project path="external/fio" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_fio" />
-
-  <remove-project name="platform/external/libexif" />
-  <project path="external/libexif" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_libexif" />
-
-  <remove-project name="platform/external/toybox" />
-  <project path="external/toybox" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="external_toybox" />
+  <remove-project name="platform/external/libweave" />
+  <project path="external/libweave" name="Oreo-onyx/external_libweave" remote="github" revision="master" />
 
   <remove-project name="platform/frameworks/av" />
-  <project path="frameworks/av" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="frameworks_av" />
+  <project path="frameworks/av" name="lineage-next/android_frameworks_av" remote="github" revision="lineage-15.0_master" />
 
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="AdrianDC/platform_frameworks_base" remote="github" revision="aosp_development_sony8960_o" />
+  <project path="frameworks/base" name="AdrianDC/platform_frameworks_base" remote="github" revision="aosp_development_sony8960_master" />
 
   <remove-project name="platform/frameworks/native" />
-  <project path="frameworks/native" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="frameworks_native" />
+  <project path="frameworks/native" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="frameworks_native" />
 
   <remove-project name="platform/hardware/interfaces" />
-  <project path="hardware/interfaces" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="hardware_interfaces" />
+  <project path="hardware/interfaces" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="hardware_interfaces" />
+
+  <remove-project name="platform/hardware/ril"/>
+  <project path="hardware/ril" name="lineage-next/android_hardware_ril" remote="github" revision="lineage-15.0_master" />
 
   <remove-project name="platform/packages/apps/Camera2" />
-  <project path="packages/apps/Camera2" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="packages_apps_Camera2" />
+  <project path="packages/apps/Camera2" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="packages_apps_Camera2" />
 
   <remove-project name="platform/packages/apps/Gallery2" />
-  <project path="packages/apps/Gallery2" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="packages_apps_Gallery2" />
+  <project path="packages/apps/Gallery2" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="packages_apps_Gallery2" />
 
   <remove-project name="platform/packages/apps/Settings" />
-  <project path="packages/apps/Settings" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="packages_apps_Settings" />
 
   <remove-project name="platform/packages/providers/MediaProvider" />
-  <project path="packages/providers/MediaProvider" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="packages_providers_MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="packages_providers_MediaProvider" />
 
   <remove-project name="platform/system/bt" />
-  <project path="system/bt" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_bt" />
+  <project path="system/bt" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="system_bt" />
 
   <remove-project name="platform/system/core" />
-  <project path="system/core" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_core" />
+  <project path="system/core" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="system_core" />
 
   <remove-project name="platform/system/netd" />
-  <project path="system/netd" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_netd" />
+  <project path="system/netd" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="system_netd" />
 
   <remove-project name="platform/system/sepolicy" />
-  <project path="system/sepolicy" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_sepolicy" />
+  <project path="system/sepolicy" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="system_sepolicy" />
 
   <remove-project name="platform/system/vold" />
-  <project path="system/vold" name="AdrianDC/aosp_development_sony8960_o" remote="github" revision="system_vold" />
+  <project path="system/vold" name="AdrianDC/aosp_development_sony8960_master" remote="github" revision="system_vold" />
 
-  <remove-project name="platform/hardware/qcom/audio" />
-  <project path="hardware/qcom/audio" name="Oreo-onyx/hardware_qcom_audio" remote="github" revision="oreo" />
+  <remove-project name="platform/hardware/qcom/audio"/>
+  <project path="hardware/qcom/audio" name="lineage-next/android_hardware_qcom_audio" remote="github" revision="lineage-15.0_master" />
+  <project path="hardware/qcom/audio-caf/msm8974" name="lineage-next/android_hardware_qcom_audio" remote="github" revision="lineage-15.0-caf-8974" />
 
-  <remove-project name="platform/hardware/qcom/display" />
-  <project path="hardware/qcom/display" name="Oreo-onyx/hardware_qcom_display" remote="github" revision="oreo" />
-  <project path="hardware/qcom/display-caf/msm8974" name="Oreo-onyx/hardware_qcom_display" remote="github" revision="oreo-caf-8974" />
+  <remove-project name="platform/hardware/qcom/camera"/>
+  <project path="hardware/qcom/camera" name="lineage-next/android_hardware_qcom_camera" remote="github" revision="lineage-15.0_master" />
+
+  <remove-project name="platform/hardware/qcom/display"/>
+  <project path="hardware/qcom/display" name="lineage-next/android_hardware_qcom_display" remote="github" revision="lineage-15.0_master" />
+  <project path="hardware/qcom/display-caf/msm8974" name="LineageOS/android_hardware_qcom_display" remote="github" revision="cm-14.1-caf-8974" />
 
   <remove-project name="platform/hardware/qcom/media" />
-  <project path="hardware/qcom/media" name="Oreo-onyx/hardware_qcom_media" remote="github" revision="oreo" />
-  <project path="hardware/qcom/media-caf/msm8974" name="Oreo-onyx/hardware_qcom_media" remote="github" revision="oreo-caf-8974" />
+  <project path="hardware/qcom/media" name="lineage-next/android_hardware_qcom_media" remote="github" revision="lineage-15.0_master" />
+  <project path="hardware/qcom/media-caf/msm8974" name="LineageOS/android_hardware_qcom_media" remote="github" revision="cm-14.1-caf-8974" />
 
   <remove-project name="platform/hardware/qcom/gps" />
   <project path="hardware/qcom/gps" name="Oreo-onyx/hardware_qcom_gps" remote="github" revision="oreo" />
 
   <remove-project name="platform/hardware/qcom/bt" />
-  <project path="hardware/qcom/bt" name="Oreo-onyx/hardware_qcom_bt" remote="github" revision="oreo" />
-
-  <project path="external/brotli" name="platform/external/brotli" revision="master" />
-
-  <project path="system/timezone" name="platform/system/timezone" revision="master" />
+  <project path="hardware/qcom/bt" name="Oreo-onyx/hardware_qcom_bt" remote="github" revision="master" />
 
 </manifest>
